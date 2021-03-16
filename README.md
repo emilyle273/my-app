@@ -1,1 +1,10 @@
-# my-app
+- Install gulp-cli
+  - npm install --global gulp-cli
+- Deploy hosting firebase
+  - npm install -g firebase-tools
+  - firebase login
+  - firebase init
+  - firebase deploy
+- Build app
+  - Build sass: gulp sass
+  - Build watch: gulp watch
