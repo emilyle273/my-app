@@ -1,0 +1,16 @@
+.feature {
+  width: 85%;
+  margin: auto;
+}
+
+//tablet
+@media (min-width: $screen-sm-min) {
+
+}
+
+//desktop
+@media (min-width: $screen-md-min) {
+  .feature {
+    width: 62.5%;
+  }
+}

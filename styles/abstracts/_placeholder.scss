@@ -1,0 +1,270 @@
+%font-main {
+  font-family: "merriweather";
+}
+
+%display-inline-block {
+  display: inline-block;
+}
+
+%d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+%align-items-stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+%align-items-baseline {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+%align-items-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  align-items: flex-start;
+}
+
+%align-items-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  align-items: flex-end;
+}
+
+%align-item-bottom {
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+%flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+%flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+%flex-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+%justify-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+%justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+%justify-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+%justify-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+%d-inline {
+  display: inline;
+}
+
+%d-none {
+  display: none;
+}
+
+%d-block {
+  display: block;
+}
+
+%d-grid {
+  display: grid;
+}
+
+%p-relative {
+  position: relative;
+}
+
+%text-center {
+  text-align: center;
+}
+
+%text-right {
+  text-align: right;
+}
+
+%text-left {
+  text-align: left;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%lowercase {
+  text-transform: lowercase;
+}
+
+%capitalize {
+  text-transform: capitalize;
+}
+
+%none-decoration {
+  text-decoration: none;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+%flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%flow-wrap {
+  flex-flow: row wrap;
+}
+
+%flex-wrap {
+  flex-wrap: wrap;
+}
+
+%relative {
+  position: relative;
+}
+
+%absolute {
+  position: absolute;
+}
+
+%fixed {
+  position: fixed;
+}
+
+%align-self-center {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+%txt-overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+%white-space-nowrap {
+  white-space: nowrap;
+}
+
+%white-space-pre-wrap {
+  white-space: pre-wrap;
+}
+
+%overflow-hidden {
+  overflow: hidden;
+}
+
+%overflow-auto {
+  overflow: auto;
+}
+
+%text-truncate {
+  @extend %txt-overflow-ellipsis;
+  @extend %white-space-nowrap;
+  @extend %overflow-hidden;
+}
+
+%clear-padding-margin {
+  padding: 0;
+  margin: 0;
+}
+
+%margin-auto {
+  margin: auto;
+}
+
+%pointer {
+  cursor: pointer;
+}
+
+%underline {
+  text-decoration: underline;
+}
+
+%outline-none {
+  outline: none;
+}
+
+%word-break-all {
+  word-break: break-all;
+}
+
+%border-none {
+  border: none;
+}
+
+%text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+%line-height-normal {
+  line-height: normal;
+}
+
+%full-width {
+  width: 100%;
+}
+
+%justify-around {
+  justify-content: space-around;
+}
+
+%input {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+}

@@ -1,0 +1,17 @@
+// Mixin font style
+@mixin font($font-size, $color: false) {
+  @extend %font-main;
+  
+  @if ($font-size) {
+    font-size: $font-size;
+  }
+  @if ($color) {
+    color: $color;
+  }
+}
+
+// Mixin format element size
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

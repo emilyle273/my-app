@@ -1,0 +1,236 @@
+
+
+.header {
+  background-color: $cl-saffron;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  .header-container {
+    justify-content: flex-end;
+    margin: auto;
+  }
+  .header-logo {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -20px;
+  }
+
+  .header-navigation {
+    @extend %d-flex;
+    // margin: auto 76px auto auto;
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav {
+    @extend %flex-around;
+    @extend %align-items-center ;
+
+    .active {
+      color: $cl-white;
+    }
+
+    .btn-contact {
+      background-color: $cl-green;
+      color: $cl-white;
+      padding: 14px 62px;
+    }
+  }
+  
+}
+
+.nav-item {
+  @include font(16px, $cl-green);
+
+  font-weight: bold;
+  &:hover {
+    @include font(16px, $cl-white);
+    text-decoration: none;
+  }
+}
+
+.header-top {
+  height: 50px;
+}
+
+// Drawer content header
+.header-sm {
+  background-color: $cl-saffron;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  & img {
+    height: 50px;
+  }
+  .drawer {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    .drawer--right {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.drawer-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+
+  & > .drawer-bg {
+    width: $drawer-width;
+    background: $cl-saffron;
+
+    .drawer-menu {
+      padding: 50px 20px;
+      li {
+        padding: 10px 0;
+      }
+    }
+  }
+  .drawer-hamburger {
+    top: -4px;
+    width: 3rem;
+  }
+} 
+
+.drawer--right .drawer-content .drawer-nav {
+  right: -259.67px;
+  transition: right 1s cubic-bezier(.19,1,.22,1);
+}
+.drawer-toggle {
+  .drawer-hamburger-icon {
+    background-color: white;
+    height: 5px;
+    border-radius: 5px;
+    width: 25px;
+    &:before {
+      background-color: white;
+      height: 5px;
+      border-radius: 5px;
+    }
+    &:after {
+      background-color: white;
+      height: 5px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.drawer--right.drawer-open .drawer-content .drawer-hamburger {
+  right: $drawer-width;
+  // right: 0;
+}
+.btn-social {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  .btn-icon {
+    width: 40px;
+    height: auto;
+    padding-right: 10px;
+    padding-bottom: 2px;
+  }
+  .btn-messger {
+    padding: 0;
+    width: 50px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+  }
+  .btn-zalo {
+    background-color: #00ACD4;
+    margin-bottom: 15px;
+  }
+  .btn-phone {
+    background-color: $cl-green;
+    .btn-icon {
+      width: 30px;
+    }
+  }
+  .btn-contact {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    width: 162px;
+    height: 40px;
+    outline: none;
+  }
+}
+
+.header-navigation .nav > li > a {
+  cursor: pointer;
+  &:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+  }
+}
+
+.drawer-open-wraper {
+  background-color: transparent;
+  height: 100%;
+}
+
+
+// mobile
+@media only screen and (min-width: 320px) {
+  .header-container {
+    width: 100%;
+  }
+
+  .header-sm {
+    display: block;
+  }
+
+  .header-md {
+    display: none;
+  }
+
+  .logo {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// desktop
+@media only screen and (min-width: $screen-md-min) {
+  .header-container {
+    width: 992px;
+  }
+  .header-sm {
+    display: none;
+  }
+
+  .header-md {
+    display: block;
+  }
+}
+
+.navbar-default .navbar-collapse,
+.navbar-collapse {
+  border-color: transparent;
+  border-top: transparent;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .draw-btn > .icon-bar {
+  background-color: $cl-green;
+}
