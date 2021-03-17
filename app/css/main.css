@@ -3676,9 +3676,9 @@ address {
   src: url("../../static/fonts/Merriweather-Bold.ttf") format("ttf");
   src: url("../../static/fonts/Merriweather-BoldIt.ttf") format("ttf");
   src: url("../../static/fonts/Merriweather-Italic.ttf") format("ttf");
-  src: url("./../../static/fonts/Merriweather-LightIt.ttf") format("ttf");
-  src: url("./../../static/fonts/Merriweather-Regular.ttf") format("ttf");
-  src: url("./../../static/fonts/Merriweather-UltraBdIt.ttf") format("ttf"); }
+  src: url("../../static/fonts/Merriweather-LightIt.ttf") format("ttf");
+  src: url("../../static/fonts/Merriweather-Regular.ttf") format("ttf");
+  src: url("../../static/fonts/Merriweather-UltraBdIt.ttf") format("ttf"); }
 
 /* Common */
 ul {
@@ -3689,7 +3689,7 @@ li {
   list-style-type: none; }
 
 /* Define font size */
-body, .nav-item, .nav-item:hover, .contact .contact-title, .contact .text, .contact .label {
+body, .banner-content__text, .banner-content__des, .banner-content__title, .banner-content__button, .nav-item, .nav-item:hover, .contact .contact-title, .contact .text, .contact .label {
   font-family: "merriweather"; }
 
 .header .header-navigation {
@@ -3702,7 +3702,7 @@ body, .nav-item, .nav-item:hover, .contact .contact-title, .contact .text, .cont
   -ms-flex-align: center;
   align-items: center; }
 
-.form-item .icon-form, .form-item .icon-form .icon-detail {
+.banner-content__button, .form-item .icon-form, .form-item .icon-form .icon-detail {
   display: block; }
 
 .header .nav {
@@ -3720,7 +3720,9 @@ body, .nav-item, .nav-item:hover, .contact .contact-title, .contact .text, .cont
   font-size: 16px; }
 
 .banner {
-  position: relative; }
+  padding-top: 50px;
+  background: url("../../static/images/banner.png") no-repeat;
+  background-size: cover; }
 
 .black-banner .black-banner-content .banner-content .content .button {
   margin-top: 35px; }
@@ -3732,6 +3734,28 @@ body, .nav-item, .nav-item:hover, .contact .contact-title, .contact .text, .cont
 @media (min-width: 992px) {
   .feature {
     width: 62.5%; } }
+
+.banner-content {
+  padding: 9% 0;
+  text-align: center;
+  font-weight: bold; }
+  .banner-content__text, .banner-content__des {
+    font-size: 24px;
+    color: #fff; }
+  .banner-content__title {
+    font-size: 44px;
+    color: #fff; }
+  .banner-content__button {
+    margin: 53px auto 0 auto;
+    font-size: 16px;
+    color: #fff;
+    padding: 17px 30px;
+    background-color: #f7b308; }
+
+@media (min-width: 992px) {
+  .banner-content__button {
+    padding: 22px 47px;
+    font-size: 24px; } }
 
 .button {
   border-radius: 40px;
