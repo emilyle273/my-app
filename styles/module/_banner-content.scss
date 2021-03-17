@@ -1,0 +1,28 @@
+.banner-content {
+  padding: 9% 0;
+  text-align: center;
+  font-weight: bold;
+
+  &__text, &__des  {
+    @include font(24px, $cl-white);
+  }
+
+  &__title {
+    @include font(44px, $cl-white);
+  }
+
+  &__button {
+    margin: 53px auto 0 auto;
+    @extend %d-block;
+    @include font(16px, $cl-white);
+    padding: 17px 30px;
+    background-color: $cl-saffron;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .banner-content__button {
+    padding: 22px 47px;
+    font-size: 24px;
+  }
+}
