@@ -1,0 +1,78 @@
+.contact {
+    background-color: #F2F2F2;
+  
+    .contact-title {
+      @include font(32px, $cl-green);
+  
+      font-weight: bold;
+      text-align: center;
+      padding-top: 40px;
+      margin: 0;
+    }
+  
+    .text {
+      @include font(16px, $cl-green);
+      display: block;
+    }
+  
+    .image-logo {
+      width: 80%;
+    }
+  
+    .label {
+      @include font(16px, #4F4F4F);
+    }
+  
+    .form-info {
+      padding: 30px 0 50px 0;
+    }
+  
+    .form-input {
+      border: 1px solid #4F4F4F;
+    }
+  
+    .form-info {
+      .form-area {
+        box-sizing: border-box;
+        border-radius: 3px;
+        width: 100%;
+        background-color: transparent;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #4F4F4F;
+      }
+    }
+  
+  }
+  
+  //desktop
+  @media (min-width: $screen-md-min) {
+    .section-content {
+      display: flex;
+      justify-content: space-between;
+  
+      .phone-add, 
+      .email-zalo {
+        display: flex;
+      }
+  
+      .contact-content {
+        flex-basis: 45%;
+      }
+  
+      .form-info {
+        flex-basis: 50%;;
+      }
+    
+      .address-content, .email-content {
+        flex-basis: 53%;
+        margin-right: 10px;
+      }
+  
+      .phone-content, .zalo-content {
+        flex-basis: calc(100% - 53% - 10px);
+      }
+  
+    }
+    
+  }

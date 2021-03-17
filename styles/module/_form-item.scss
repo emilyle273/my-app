@@ -1,0 +1,50 @@
+.form-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .icon-form {
+    @extend %d-block;
+    @include size(93px, 93px);
+    border-radius: 50%;
+    background-color: $cl-saffron;
+    position: relative;
+    margin-bottom: 10px;
+    
+    .icon-detail {
+      @extend %d-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .text-form {
+    font-size: 16px;
+    color: #F7B308;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.form-icons {
+  display: flex;
+}
+
+//tablet
+@media only screen and (max-width: $screen-sm-min) {
+  .form-item {
+    .icon-form {
+      @include size(64px, 64px);
+      .icon-detail {
+        @include size(44px, 44px);
+      }
+    }
+
+  }
+}
+
+
+//desktop
+@media (min-width: $screen-md-min) {
+}

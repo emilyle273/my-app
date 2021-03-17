@@ -3689,7 +3689,7 @@ li {
   list-style-type: none; }
 
 /* Define font size */
-body, .nav-item, .nav-item:hover {
+body, .nav-item, .nav-item:hover, .contact .contact-title, .contact .text, .contact .label {
   font-family: "merriweather"; }
 
 .header .header-navigation {
@@ -3701,6 +3701,9 @@ body, .nav-item, .nav-item:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.form-item .icon-form, .form-item .icon-form .icon-detail {
+  display: block; }
 
 .header .nav {
   display: flex;
@@ -3733,6 +3736,40 @@ body, .nav-item, .nav-item:hover {
 .button {
   border-radius: 40px;
   border-width: 0; }
+
+.form-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .form-item .icon-form {
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    background-color: #f7b308;
+    position: relative;
+    margin-bottom: 10px; }
+    .form-item .icon-form .icon-detail {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .form-item .text-form {
+    font-size: 16px;
+    color: #F7B308;
+    text-align: center;
+    padding-top: 10px; }
+
+.form-icons {
+  display: flex; }
+
+@media only screen and (max-width: 768px) {
+  .form-item .icon-form {
+    width: 64px;
+    height: 64px; }
+    .form-item .icon-form .icon-detail {
+      width: 44px;
+      height: 44px; } }
 
 .header {
   background-color: #f7b308;
@@ -3948,3 +3985,51 @@ body, .nav-item, .nav-item:hover {
 .row {
   margin-right: auto;
   margin-left: auto; }
+
+.contact {
+  background-color: #F2F2F2; }
+  .contact .contact-title {
+    font-size: 32px;
+    color: #00581e;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0; }
+  .contact .text {
+    font-size: 16px;
+    color: #00581e;
+    display: block; }
+  .contact .image-logo {
+    width: 80%; }
+  .contact .label {
+    font-size: 16px;
+    color: #4F4F4F; }
+  .contact .form-info {
+    padding: 30px 0 50px 0; }
+  .contact .form-input {
+    border: 1px solid #4F4F4F; }
+  .contact .form-info .form-area {
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #4F4F4F; }
+
+@media (min-width: 992px) {
+  .section-content {
+    display: flex;
+    justify-content: space-between; }
+    .section-content .phone-add,
+    .section-content .email-zalo {
+      display: flex; }
+    .section-content .contact-content {
+      flex-basis: 45%; }
+    .section-content .form-info {
+      flex-basis: 50%; }
+    .section-content .address-content, .section-content .email-content {
+      flex-basis: 53%;
+      margin-right: 10px; }
+    .section-content .phone-content, .section-content .zalo-content {
+      flex-basis: calc(100% - 53% - 10px); } }
